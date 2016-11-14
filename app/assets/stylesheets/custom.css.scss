@@ -1,0 +1,131 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+$base-font: 'Montserrat', Arial, sans-serif;
+$base-font-size: 12px;
+$primary-color: #10BBA7;
+$secondary-color: #E6365F;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: $base-font;
+	font-size: $base-font-size;
+}
+
+section {
+	padding: 20px;
+}
+
+.navy-bar {
+	padding: 10px 20px;
+	height: 60px;
+	width: 100%;
+	z-index: 10;
+	
+	ul {
+		list-style: none;
+		float: right;
+		display: inline;
+	}
+
+	li {
+		display: inline-block;
+	}
+}
+
+#brand {
+	width: 200px;
+	display: inline;
+}
+
+/* first rgbALPHA is top, second is bottom. */
+.hero-image {
+	background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.1)), url(work_time.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+}
+
+#hero {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+#header-name {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#gallery {
+	width: 100%;
+	padding: 0;
+	ul {
+		padding: 0;
+		width: 100%;
+		li {
+			list-style: none;
+			width: 49%;
+			display: inline-block;
+
+			.thumbnail {
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 300px;
+				width: 103.5%;
+				margin: 0;
+			}
+		}
+	}
+}
+
+#img1 {
+	background-image: url(work_time2.jpg);
+}
+
+#img2 {
+	background-image: url(work_time3.jpg);
+}
+
+#img3 {
+	background-image: url(collab.jpg);
+}
+
+#img4 {
+	background-image: url(city.jpg);
+	background-position: bottom center;
+}
+
+
+/* media detects size of window - styles apply to 440px wide and below */
+@media(max-width: 440px) {
+
+	#gallery {
+		ul {
+			li {
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

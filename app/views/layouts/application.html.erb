@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Portfolio</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+
+	</head>
+	<body>
+
+		<nav class='navy-bar'>
+			<div id='brand'>Greg</div>
+			<ul>
+				<li>Gallery</li>
+				<li>About</li>
+			</ul>
+		</nav>
+
+		<section id='hero'>
+
+			<div class='hero-image'>
+				<h1 id='header-name'>Greg's Portfolio</h1>	
+			</div>
+
+		</section>
+		<section id='gallery'>
+			<ul>
+				<li><div id='img1' class='thumbnail'></div></li>
+				<li><div id='img2' class='thumbnail'></div></li>
+				<li><div id='img3' class='thumbnail'></div></li>
+				<li><div id='img4' class='thumbnail'></div></li>
+			</ul>
+		</section>
+		<section id='about'>
+			<h2>About</h2>
+			<p>Lorem ipsome</p>
+		</section>
+
+	<%= yield %>
+
+	</body>
+</html>
